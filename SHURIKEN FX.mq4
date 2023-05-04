@@ -64,6 +64,10 @@ double flecha_up = 0,
 int OnInit()
 {
 //---
+   flecha_up = iCustom(_Symbol,PERIOD_CURRENT,"IVT_High_Low_Map_ (1)", SignalPeriod, ArrowPeriod, SL_pips, AlertON, Email,3,0);
+   flecha_down = iCustom(_Symbol,PERIOD_CURRENT,"IVT_High_Low_Map_ (1)", SignalPeriod, ArrowPeriod, SL_pips, AlertON, Email,4,0);
+   
+
 //---
    return(INIT_SUCCEEDED);
 }

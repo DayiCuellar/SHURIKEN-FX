@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "Declaracion de las variables externas",
-        "Declaracion de Variables Globales"
+        "Declaracion de Variables Globales",
+        "Variables para almacenar los valores del indicador"
     ]
 }
