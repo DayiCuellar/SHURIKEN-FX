@@ -3,6 +3,8 @@
         "Declaracion de las variables externas",
         "Declaracion de Variables Globales",
         "Variables para almacenar los valores del indicador",
-        "Apertura de Operaciones"
+        "Apertura de Operaciones",
+        "Elimine los prints y las partes del codigo que estaban comentadas",
+        "Embellecimiento"
     ]
 }
