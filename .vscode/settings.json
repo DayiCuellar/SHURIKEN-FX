@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "Declaracion de las variables externas"
+        "Declaracion de las variables externas",
+        "Declaracion de Variables Globales"
     ]
 }
