@@ -27,14 +27,14 @@ Velas vv;
 
 enum ENUM_MODO
 {
-      Automatico,
-      Manual,
+   Automatico,
+   Manual,
 };
 enum ENUM_DIR
 {
-      nada,
-      buy,
-      sell,
+   nada,
+   buy,
+   sell,
 };
 //+------------------------------------------------------------------+
 //|      Entradas de valores
@@ -45,29 +45,37 @@ extern double PIPS_TP = 5;
 extern double Lotaje = 0.01;
 input int num_mag = 0;
 //+------------------------------------------------------------------+
+//|                         Variables Globales
+//+------------------------------------------------------------------+
+ENUM_DIR  direccion = nada;
+//+------------------------------------------------------------------+
 //| Expert initialization function                                   |
 //+------------------------------------------------------------------+
 int OnInit()
-  {
+{
 //---
-   
 //---
    return(INIT_SUCCEEDED);
-  }
+}
 //+------------------------------------------------------------------+
 //| Expert deinitialization function                                 |
 //+------------------------------------------------------------------+
 void OnDeinit(const int reason)
-  {
+{
 //---
-   
-  }
+   if(_UninitReason != 3 && _UninitReason != 5) //Lo que quiero que haga solo una vez
+   {
+//---Parametros iniciales de Operaciones
+      op.Set_Numero_Magico(num_mag);
+//---
+   }
+}   
 //+------------------------------------------------------------------+
 //| Expert tick function                                             |
 //+------------------------------------------------------------------+
-void OnTick()
-  {
+   void OnTick()
+   {
 //---
-   
-  }
+   }// FIN DEL ONTICK
 //+------------------------------------------------------------------+
+   
