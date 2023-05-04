@@ -40,6 +40,7 @@ enum ENUM_DIR
 //|      Entradas de valores
 //+------------------------------------------------------------------+
 input string Parametros_Operaciones = "--------------------- Parametros_Operaciones";
+extern double PIPS_SL = 0;
 //+------------------------------------------------------------------+
 //| Expert initialization function                                   |
 //+------------------------------------------------------------------+
